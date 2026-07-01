@@ -12,7 +12,7 @@
 - ⚡ **Real-time Monitoring**: WebSocket integration for instant token alerts
 - 🔍 **Advanced Filtering**: Custom filters for token discovery based on 18+ metrics
 - 📊 **Comprehensive Data**: Captures 25+ token metrics from Axiom API
-- 🎯 **Auto-opening**: Automatic browser tab opening for matching tokens
+- 🔫 **Auto-opening**: Automatic browser tab opening for matching tokens
 - 🔔 **Multi-channel Notifications**: Desktop, audio, UI highlighting
 - 💾 **Persistent Storage**: SQLite database for history and analysis
 - 🌙 **Dark Theme**: Modern PySide6 interface
@@ -44,7 +44,7 @@ cd token-scanner
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -127,7 +127,7 @@ token-scanner/
 │
 ├── database/               # Data persistence
 │   ├── __init__.py
-│   ├── connection.py       # Database connection
+│   ├���─ connection.py       # Database connection
 │   ├── models.py           # SQLAlchemy models
 │   └── repository.py       # Repository pattern
 │
@@ -238,7 +238,7 @@ no_mint_authority: true
 no_freeze_authority: true
 ```
 
-## 📱 Notifications
+## 🔔 Notifications
 
 - **Desktop Notifications**: System-level pop-ups
 - **Audio Alerts**: Configurable sound notifications
@@ -258,7 +258,7 @@ pytest tests/test_filters.py -v
 pytest tests/ --cov=. --cov-report=html
 ```
 
-## 🔒 Security Considerations
+## 🔐 Security Considerations
 
 - API tokens stored in `.env` (never committed)
 - Database encryption ready
